@@ -1,4 +1,4 @@
-export const profile = {
+﻿export const profile = {
   name: '이주언',
   title: '모바일 앱 개발자',
   email: 'jueon.dev@gmail.com',
@@ -6,8 +6,8 @@ export const profile = {
   summary:
     '기숙사 세탁 예약 앱 Washer를 3개월+ 운영하며 가입자 200+명, 일 평균 사용자 40명을 유지하고 있습니다. 매년 신입생 약 70명이 새로 유입되는 구조라, 사용자가 계속 바뀌어도 흔들리지 않는 예약 및 상태 동기화 로직을 가장 먼저 다듬었습니다. 반복은 자동화하고, 경험은 자산으로 남깁니다.',
   links: [
-    { label: 'GitHub', href: '#' },
-    { label: 'Velog', href: '#' },
+    { label: 'GitHub', href: 'https://github.com/aiden30015' },
+    { label: 'Velog', href: 'https://velog.io/@aiden30015/posts' },
   ],
 }
 
