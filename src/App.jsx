@@ -108,7 +108,16 @@ function Project({ p }) {
         <p className="meta">{p.period}</p>
         <p className="meta">{p.team}</p>
         <p className="meta">{p.role}</p>
-        <p className="meta">{p.links.join(' · ')}</p>
+        <p className="meta">
+          {p.links.map((l, i) => (
+            <span key={l.label}>
+              {i > 0 && ' · '}
+              <a href={l.href} target="_blank" rel="noopener noreferrer">
+                {l.label}
+              </a>
+            </span>
+          ))}
+        </p>
       </Reveal>
 
       <Reveal as="p">{p.description}</Reveal>

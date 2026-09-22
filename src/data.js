@@ -15,7 +15,7 @@ export const stats = [
   { value: 200, suffix: '+', label: 'Washer 가입자' },
   { value: 40, suffix: '명', label: '일 평균 사용자' },
   { value: 10, suffix: '회+', label: '무인 배포' },
-  { value: 139, suffix: '건', label: 'GOMS 테스트' },
+  { value: 10, suffix: '건+', label: '진행한 프로젝트' },
 ]
 
 export const skills = [
@@ -23,7 +23,7 @@ export const skills = [
   { group: 'Web', items: ['React'] },
   {
     group: 'Flutter 스택',
-    items: ['Riverpod', 'Dio', 'Retrofit', 'Freezed', 'json_serializable', 'go_router', 'build_runner'],
+    items: ['Bloc','Riverpod', 'Dio', 'Retrofit', 'Freezed', 'json_serializable', 'go_router', 'build_runner'],
   },
   {
     group: 'Infra / 배포',
@@ -38,7 +38,11 @@ export const projects = [
     period: '2025.11 – 2026.6 (배포 완료 · 서비스 운영 중)',
     team: '11명 (앱 4 · 서버 4 · 웹 2 · 디자인 1) - 앱 파트',
     role: '예약 도메인 설계 · 앱 안정화 · 크래시 대응 · 구조 개편 · 배포 자동화',
-    links: ['App Store', 'Google Play'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/team-washer/Washer-App-v2' },
+      { label: 'App Store', href: 'https://apps.apple.com/kr/app/washer-v2/id6760886865' },
+      { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.washer.v2&pli=1' },
+    ],
     description:
       '기숙사 세탁실 명찰제에서 생기던 명찰 분실과 종료 시간 확인 불가를 해결한 앱입니다. 예약, 고장 신고, 알림, 현황과 히스토리 조회를 제공합니다. 가입자 200+명, 일 평균 사용자 40명이 사용합니다.',
     stack: [
@@ -88,7 +92,10 @@ export const projects = [
     period: '2026.2 ~ 2026.6 (배포 완료 · 서비스 운영 중)',
     team: '7명 (PM 1 · 디자인 1 · 서버 1 · iOS 2 · Android 2) - Android 앱 주 개발',
     role: '카카오 SDK 지도 및 QR 구현 · R8 keep 룰 · single-flight 재발급 · 테스트 139건',
-    links: ['GitHub', 'Google Play'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/team-haribo/GOMS-Android-V3' },
+      { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.goms.goms_android_v2' },
+    ],
     description:
       '학생회가 수기로 적던 외출 명단 관리를 QR 인증으로 대체한 교내 외출 관리 앱입니다. 기존 안드로이드 네이티브 앱을 이어받을 인원이 없어 Flutter로 다시 만들면서 인증과 라우팅, 상태관리 구조를 새로 설계했습니다.',
     stack: [
